@@ -1,0 +1,24 @@
+html body {
+  min-height: 100vh;
+  margin: 0px;
+  font-family: "Open-Sans", system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+:root {
+  position: relative;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --red: #f10000;
+  --green: #008000;
+}

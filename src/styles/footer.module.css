@@ -1,0 +1,95 @@
+.footer-wrap {
+  width: 100%;
+  min-height: 300px;
+  max-height: 100%;
+  box-sizing: border-box;
+  background-color: black;
+  padding: 30px 15% 50px 15%;
+  transition: 300ms;
+}
+.footer-content * {
+  color: rgba(256, 256, 256, 0.8);
+}
+.footer-content h2 {
+  color: rgb(256, 256, 256);
+  margin: 0px;
+}
+.footer-content {
+  display: flex;
+
+  width: 100%;
+  height: 100%;
+}
+.section-about-club {
+  text-align: justify;
+}
+
+.section-browse {
+  text-align: justify;
+}
+.footer-content ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-content li {
+  width: 100%;
+  padding-top: 5px;
+}
+.footer-content a:hover {
+  color: white;
+}
+.section-actions {
+  grid-column: 3 / span 1;
+}
+.footer-content li {
+  width: 100%;
+  margin-top: 5px;
+}
+.section-contacts {
+  grid-column: 4 / span 1;
+  background-color: palevioletred;
+}
+@media all and (max-width: 1000px) {
+  .footer-wrap {
+    padding: 30px 10% 50px 10%;
+  }
+  .footer-content {
+    grid-template-columns: 1fr 1fr 1.5fr;
+  }
+  .section-about-club {
+    display: none;
+  }
+
+  .section-browse {
+    grid-column: 1 / span 1;
+  }
+  .section-actions {
+    grid-column: 2 / span 1;
+  }
+  .section-contacts {
+    grid-column: 3 / span 1;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .footer-wrap {
+    padding: 30px 5% 50px 5%;
+  }
+  .footer-content {
+    grid-template-columns: 2fr 2fr;
+  }
+  .section-about-club {
+    display: none;
+  }
+
+  .section-actions {
+    display: none;
+  }
+
+  .section-browse {
+    grid-column: 1 / span 1;
+  }
+  .section-contacts {
+    grid-column: 2 / span 1;
+  }
+}
