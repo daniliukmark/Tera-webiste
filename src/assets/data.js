@@ -1,3 +1,9 @@
+export const CONTACTS = {
+  email: "email@example.com",
+  phoneNumber: "+37067777777",
+  location: "Žolyno g., 10210 Vilnius",
+};
+
 export const ROUTES = [
   {
     path: "/",

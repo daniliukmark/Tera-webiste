@@ -1,5 +1,5 @@
 .stripe {
-  z-index: -999;
+  z-index: -1;
 
   display: flex;
   justify-content: flex-end;
@@ -12,7 +12,6 @@
 .stripe * {
   width: 50px;
   flex-shrink: 1;
-  z-index: -999;
 }
 
 .blank-left {

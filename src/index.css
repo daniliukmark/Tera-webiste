@@ -1,5 +1,5 @@
 html body {
-  min-height: 100vh;
+  min-height: 100%;
   margin: 0px;
   font-family: "Open-Sans", system-ui, Avenir, Helvetica, Arial, sans-serif;
 }

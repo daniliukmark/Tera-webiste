@@ -1,8 +1,7 @@
 .wrap {
+  top: 0px;
   position: fixed;
   width: 100%;
-  top: 0;
-  z-index: 999;
 }
 
 .nav-wrap {
@@ -30,7 +29,7 @@
   width: 40px;
 }
 
-ul {
+.wrap-list ul {
   height: 80px;
   width: 100%;
   margin: 0px;
@@ -41,7 +40,7 @@ ul {
   list-style: none;
 }
 
-li * {
+.wrap-list li * {
   font-size: 20px;
   text-decoration: none;
   color: black;
@@ -49,7 +48,7 @@ li * {
   transition: box-shadow 0.2s; /* Add the transition property for box-shadow */
 }
 
-li *:hover {
+a *:hover {
   color: rgba(0, 0, 0, 0.6);
 }
 

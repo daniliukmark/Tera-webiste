@@ -1,95 +1,87 @@
 .footer-wrap {
+  z-index: 2;
   width: 100%;
-  min-height: 300px;
-  max-height: 100%;
+  height: 100%;
   box-sizing: border-box;
   background-color: black;
   padding: 30px 15% 50px 15%;
   transition: 300ms;
 }
-.footer-content * {
-  color: rgba(256, 256, 256, 0.8);
-}
-.footer-content h2 {
-  color: rgb(256, 256, 256);
-  margin: 0px;
-}
 .footer-content {
   display: flex;
-
+  box-sizing: border-box;
+  flex-direction: row;
+  gap: 4%;
+  justify-content: start;
   width: 100%;
   height: 100%;
 }
-.section-about-club {
-  text-align: justify;
-}
 
-.section-browse {
-  text-align: justify;
+.footer-section * {
+  color: rgba(256, 256, 256, 0.8);
 }
-.footer-content ul {
-  display: flex;
-  flex-wrap: wrap;
+.footer-section h2 {
+  color: rgb(256, 256, 256);
+  margin: 0px;
 }
-.footer-content li {
-  width: 100%;
-  padding-top: 5px;
-}
-.footer-content a:hover {
+.footer-section a:hover {
   color: white;
 }
-.section-actions {
-  grid-column: 3 / span 1;
+.footer-section ul {
+  margin-top: 10px;
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
-.footer-content li {
-  width: 100%;
-  margin-top: 5px;
+.footer-content ul li {
+  height: min-content;
+  margin-bottom: 10px;
+}
+
+.section-about-club {
+  width: 25%;
+}
+.section-browse {
+  width: 20%;
+}
+.section-actions {
+  width: 25%;
 }
 .section-contacts {
-  grid-column: 4 / span 1;
-  background-color: palevioletred;
+  width: 30%;
 }
-@media all and (max-width: 1000px) {
+.section-about-club p {
+  margin: 0px;
+  margin-top: 10px;
+}
+.section-contacts li {
+  display: flex;
+  align-items: start;
+}
+.section-contacts img {
+  height: 20px;
+  margin-right: 8px;
+  margin-top: 5px;
+
+  filter: invert(100%);
+}
+
+@media all and (max-width: 1200px) {
   .footer-wrap {
     padding: 30px 10% 50px 10%;
   }
-  .footer-content {
-    grid-template-columns: 1fr 1fr 1.5fr;
-  }
-  .section-about-club {
-    display: none;
-  }
-
-  .section-browse {
-    grid-column: 1 / span 1;
-  }
-  .section-actions {
-    grid-column: 2 / span 1;
-  }
-  .section-contacts {
-    grid-column: 3 / span 1;
+  .footer-section h2 {
+    font-size: 20px;
   }
 }
 
-@media all and (max-width: 600px) {
-  .footer-wrap {
-    padding: 30px 5% 50px 5%;
-  }
+@media all and (max-width: 900px) {
   .footer-content {
-    grid-template-columns: 2fr 2fr;
+    flex-direction: column;
   }
-  .section-about-club {
-    display: none;
-  }
-
-  .section-actions {
-    display: none;
-  }
-
-  .section-browse {
-    grid-column: 1 / span 1;
-  }
-  .section-contacts {
-    grid-column: 2 / span 1;
+  .footer-section {
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
