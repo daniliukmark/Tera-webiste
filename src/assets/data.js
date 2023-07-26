@@ -1,3 +1,4 @@
+export const BASE_URL = "/Tera-website";
 export const CONTACTS = {
   email: "email@example.com",
   phoneNumber: "+37067777777",
@@ -6,44 +7,33 @@ export const CONTACTS = {
 
 export const ROUTES = [
   {
-    path: "/",
+    path: `${BASE_URL}/`,
     text: "Pagrindinis",
     isSelected: false,
   },
   {
-    path: "/klubas",
+    path: `${BASE_URL}/klubas`,
     text: "Apie Kluba",
     isSelected: false,
   },
   {
-    path: "/parama",
+    path: `${BASE_URL}/parama`,
     text: "1.2% Parama",
     isSelected: false,
   },
   {
-    path: "/komanda",
+    path: `${BASE_URL}/komanda`,
     text: "Komanda",
     isSelected: false,
   },
   {
-    path: "/kontaktai",
+    path: `${BASE_URL}/kontaktai`,
     text: "Kontaktai",
     isSelected: false,
   },
 ];
 
 export const CALLS_FOR_ACTIONS = [
-  {
-    path: "/",
-    text: "Paremti Komanda",
-  },
-  {
-    path: "/klubas",
-    text: "Sekancios Rungtynes",
-  },
-];
-
-export const CONTACT_INFORMATION = [
   {
     path: "/",
     text: "Paremti Komanda",
