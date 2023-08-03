@@ -1,6 +1,7 @@
 .wrap {
   top: 0px;
   position: fixed;
+  z-index: 3;
   width: 100%;
 }
 
@@ -68,5 +69,16 @@ a *:hover {
   }
   .menu-icon {
     display: block;
+  }
+}
+@media all and (max-width: 500px) {
+  .logo {
+    height: 48px;
+  }
+  .menu-icon {
+    width: 32px;
+  }
+  .nav-wrap {
+    height: 60px;
   }
 }

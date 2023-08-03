@@ -1,0 +1,58 @@
+.league-table-wrap {
+  background-color: #ededed;
+  height: 500px;
+  width: 500px;
+  overflow: scroll;
+}
+.table-header,
+.table-footer {
+  background-color: black;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.table-footer {
+  height: 15px;
+}
+.table-header,
+.table-footer > h1 {
+  margin: 0;
+  color: white;
+}
+.league-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.league-table thead {
+  height: 40px;
+}
+.league-table tr {
+  height: 35px;
+}
+
+.grey-background {
+  background-color: #f2f2f2;
+}
+
+.selected {
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.center {
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media all and (max-width: 1400px) {
+  .league-table-wrap {
+    height: 400px;
+  }
+}
+@media all and (max-width: 1200px) {
+  .league-table-wrap {
+    display: none;
+  }
+}

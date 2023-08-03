@@ -1,0 +1,149 @@
+.matchday-wrap {
+  position: relative;
+  background: url(/src/assets/matchday_background.png) center;
+  background-size: 1000px auto;
+  width: 750px;
+  height: 500px;
+  aspect-ratio: 750/500;
+  display: flex;
+  align-items: center;
+}
+.matchday-info-wrap {
+  position: relative;
+  background-color: var(--red);
+  height: 220px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transition: 300ms;
+}
+
+.matchday-content {
+  max-width: 750px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  z-index: 1;
+}
+.team-container {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.match-info {
+  box-sizing: border-box;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+  flex: 1.4;
+}
+
+.match-info * {
+  color: white;
+}
+.logo-container {
+  width: 100%;
+  max-width: 150px;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.logo-container img {
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.more-info-container {
+  z-index: 0;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+.more-info-button {
+  background-color: white;
+  border: 0px;
+  padding: 0px 15px 0px 15px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.more-info-button:hover {
+  background-color: rgba(240, 240, 240, 1);
+  border: 0px;
+  cursor: pointer;
+}
+
+.stadium-info {
+  font-size: 24px;
+  font-weight: bold;
+}
+.time-info {
+  font-size: 40px;
+  font-weight: bold;
+}
+.date-info {
+  font-size: 20px;
+}
+@media all and (max-width: 1400px) {
+  .matchday-wrap {
+    width: 100%;
+    height: 400px;
+    background-size: 800px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .matchday-info-wrap {
+    height: 160px;
+  }
+  .matchday-content {
+    gap: 10px;
+  }
+  .more-info-container {
+    height: 30px;
+  }
+
+  .more-info-button {
+    font-size: 16px;
+  }
+  .stadium-info {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .time-info {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  .date-info {
+    font-size: 16px;
+  }
+}
+
+@media all and (max-width: 350px) {
+  .stadium-info {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .time-info {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .date-info {
+    font-size: 16px;
+  }
+}
