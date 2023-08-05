@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import styles from "src/styles/navbar.module.css";
+import styles from "src/styles/navBar.module.css";
 import logo from "src/assets/logo.png";
 import menuIcon from "src/assets/menu.svg";
 import { Link, useLocation } from "react-router-dom";
