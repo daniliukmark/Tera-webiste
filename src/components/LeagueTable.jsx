@@ -1,6 +1,6 @@
 import styles from "src/styles/leagueTable.module.css";
 import { STANDINGS } from "src/assets/data";
-
+import arrowDownIcon from "src/assets/Arrow-down.svg";
 export function LeagueTable() {
   const standingsList = STANDINGS.map((standing) => (
     <tr
@@ -14,7 +14,7 @@ export function LeagueTable() {
       <td className={styles["center"]}>
         <div>{standing.Place}</div>
       </td>
-      <td>{standing.Team}</td>
+      <td className={styles["team-name"]}>{standing.Team}</td>
       <td>{standing.Matches}</td>
       <td>{standing.GoalDifference}</td>
       <td>{standing.Points}</td>
@@ -22,23 +22,26 @@ export function LeagueTable() {
   ));
   return (
     <>
-      <div className={styles["league-table-wrap"]}>
-        <div className={styles["table-header"]}>
-          <h1>Turnirine Lentele</h1>
+      <div className={styles["wrap"]}>
+        <img className={styles["arrow-down-icon"]} src={arrowDownIcon} />
+        <div className={styles["league-table-wrap"]}>
+          <div className={styles["table-header"]}>
+            <h1>Turnirine Lentele</h1>
+          </div>
+          <table className={styles["league-table"]}>
+            <thead>
+              <tr>
+                <th></th>
+                <th>Klubas</th>
+                <th>Rungt.</th>
+                <th>Skirt.</th>
+                <th>Tšk.</th>
+              </tr>
+            </thead>
+            <tbody>{standingsList}</tbody>
+          </table>
+          <div className={styles["table-footer"]}></div>
         </div>
-        <table className={styles["league-table"]}>
-          <thead>
-            <tr>
-              <th>Klubas</th>
-              <th></th>
-              <th>Rungt.</th>
-              <th>Įv. skirt.</th>
-              <th>Tšk.</th>
-            </tr>
-          </thead>
-          <tbody>{standingsList}</tbody>
-        </table>
-        <div className={styles["table-footer"]}></div>
       </div>
     </>
   );
