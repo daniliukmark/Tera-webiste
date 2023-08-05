@@ -1,4 +1,4 @@
-export const BASE_URL = "/Tera-website";
+export const BASE_URL = "";
 export const CONTACTS = {
   email: "email@example.com",
   phoneNumber: "+37067777777",
