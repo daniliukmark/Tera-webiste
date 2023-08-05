@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import styles from "src/styles/MobileMenu.module.css";
+import styles from "src/styles/mobileMenu.module.css";
 import exitIcon from "src/assets/cross.svg";
 
 export function MobileMenu({ isMenuOpen, handleToggleMenu, routes }) {
