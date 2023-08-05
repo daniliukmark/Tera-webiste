@@ -8,9 +8,12 @@ export function MainLayout() {
   return (
     <>
       <Navbar />
-      <section className={styles["content"]}>
-        <Outlet />
-      </section>
+
+      <div className={styles["content-wrap"]}>
+        <section className={styles["content"]}>
+          <Outlet />
+        </section>
+      </div>
       <Footer />
       <Stripes />
     </>
