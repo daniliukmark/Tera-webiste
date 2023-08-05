@@ -2,7 +2,7 @@
   position: relative;
   background: url(/src/assets/matchday_background.png) center;
   background-size: 1000px auto;
-  width: 750px;
+  width: 900px;
   height: 500px;
   aspect-ratio: 750/500;
   display: flex;
