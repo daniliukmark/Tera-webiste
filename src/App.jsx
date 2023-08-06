@@ -8,18 +8,20 @@ import { KontaktaiPage } from "src/pages/KontaktaiPage";
 import { NotFoundPage } from "src/pages/NotFoundPage";
 import { KomandaPage } from "src/pages/KomandaPage";
 import { BASE_URL } from "src/assets/data";
+import { RungtyniuDetalesPage } from "src/pages/RungtyniuDetalesPage";
 
 function App() {
   return (
     <>
       <Routes>
         <Route path={`${BASE_URL}/`} element={<MainLayout />}>
-          <Route index element={<PagrindinisPage />}></Route>
-          <Route path="klubas" element={<ApieKlubaPage />}></Route>
-          <Route path="parama" element={<ParamaPage />}></Route>
-          <Route path="komanda" element={<KomandaPage />}></Route>
-          <Route path="kontaktai" element={<KontaktaiPage />}></Route>
-          <Route path="*" element={<NotFoundPage />}></Route>
+          <Route index element={<PagrindinisPage />} />
+          <Route path="klubas" element={<ApieKlubaPage />} />
+          <Route path="parama" element={<ParamaPage />} />
+          <Route path="komanda" element={<KomandaPage />} />
+          <Route path="kontaktai" element={<KontaktaiPage />} />
+          <Route path="/rungtynes/:id" element={<RungtyniuDetalesPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
     </>

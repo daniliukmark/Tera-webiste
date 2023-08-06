@@ -1,13 +1,19 @@
 import styles from "src/styles/nextMatchday.module.css";
 import teamHome from "src/assets/logo.png";
 import teamAway from "src/assets/teamPlaceholder.png";
+import { BASE_URL } from "src/assets/data";
+import { useNavigate } from "react-router-dom";
 
 export function NextMatchday() {
   const footballMatch = {
+    id: "1234567890",
     stadium: "Fanu Stadionas",
     time: "16:00",
     date: "17/05/17",
   };
+  const navigate = useNavigate();
+  const navigateToMatchDetails = () =>
+    navigate(`${BASE_URL}/rungtynes/${footballMatch.id}`);
   return (
     <>
       <div className={styles["matchday-wrap"]}>
@@ -30,7 +36,10 @@ export function NextMatchday() {
                 <img src={teamAway} />
               </div>
               <div className={styles["more-info-container"]}>
-                <button className={styles["more-info-button"]}>
+                <button
+                  onClick={navigateToMatchDetails}
+                  className={styles["more-info-button"]}
+                >
                   Apie Rungtynes
                 </button>
               </div>
