@@ -1,10 +1,12 @@
 .wrap {
   position: relative;
+  margin-top: 65px;
+  height: 435px;
   width: 500px;
 }
 .league-table-wrap {
   background-color: #ededed;
-  height: 500px;
+  height: 435px;
 
   overflow: scroll;
 }
@@ -62,10 +64,20 @@
 }
 @media all and (max-width: 1400px) {
   .league-table-wrap {
-    height: 400px;
+    height: 349px;
+  }
+  .wrap {
+    height: 349px;
+    margin-top: 51px;
   }
   .table-header {
     height: 30px;
+  }
+  .league-table thead {
+    height: 30px;
+  }
+  td {
+    height: 35px;
   }
 }
 @media all and (max-width: 1200px) {
