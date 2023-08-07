@@ -29,7 +29,9 @@ export function NextMatchday() {
                 {footballMatch.stadium}
               </span>
               <span className={styles["time-info"]}>{footballMatch.time}</span>
-              <span className={styles["date-info"]}>{footballMatch.date}</span>
+              <span className={styles["date-info"]}>
+                <b>{footballMatch.date}</b>
+              </span>
             </div>
             <div className={`${styles["team-container"]} ${styles["right"]}`}>
               <div className={styles["logo-container"]}>

@@ -1,0 +1,42 @@
+.content-wrap {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+}
+.header {
+  font-size: 40px;
+  width: 100%;
+  margin: 0px;
+}
+.contact-cards-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex: 1;
+  width: 650px;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.map {
+  flex: 1;
+  height: 500px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+@media all and (max-width: 1200px) {
+  .content-wrap {
+    display: block;
+  }
+  .contact-cards-wrap {
+    width: 100%;
+  }
+}
+@media all and (max-width: 800px) {
+  .contact-cards-wrap {
+    margin-bottom: 0px;
+  }
+  .map {
+    margin-bottom: 0px;
+  }
+}
