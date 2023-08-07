@@ -38,6 +38,7 @@
   }
   .map {
     margin-bottom: 0px;
-    border-radius: 0px;
+    border-radius: 10px;
+    background-color: black;
   }
 }
