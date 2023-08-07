@@ -3,8 +3,9 @@
   border-radius: 10px;
   overflow: hidden;
 
-  background: url(/src/assets/matchday_background.png) center;
+  background: url(/src/assets/matchday_background.webp) center;
   background-size: 1000px auto;
+  background-position: 50% 0%;
   width: 100%;
   height: 500px;
   aspect-ratio: 750/500;
