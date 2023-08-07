@@ -8,6 +8,7 @@ import emailIcon from "src/assets/email.svg";
 const intialRoutes = ROUTES;
 const callsForAction = CALLS_FOR_ACTIONS;
 const contactInfo = CONTACTS;
+
 export function Footer() {
   const routesList = intialRoutes.map((route) => (
     <li key={route.path} className={styles[""]}>
@@ -15,7 +16,7 @@ export function Footer() {
     </li>
   ));
   const callsForActionList = callsForAction.map((route) => (
-    <li key={route.path} className={styles[""]}>
+    <li key={route.componentId} className={styles[""]}>
       <Link to={route.path}>{route.text}</Link>
     </li>
   ));

@@ -36,10 +36,12 @@ export const ROUTES = [
 export const CALLS_FOR_ACTIONS = [
   {
     path: "/",
+    componentId: "promo",
     text: "Paremti Komanda",
   },
   {
-    path: "/klubas",
+    path: "/",
+    componentId: "next-match",
     text: "Sekancios Rungtynes",
   },
 ];

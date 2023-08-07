@@ -16,7 +16,7 @@ export function NextMatchday() {
     navigate(`${BASE_URL}/rungtynes/${footballMatch.id}`);
   return (
     <>
-      <div className={styles["matchday-wrap"]}>
+      <div id="next-match" className={styles["matchday-wrap"]}>
         <div className={styles["matchday-info-wrap"]}>
           <div className={styles["matchday-content"]}>
             <div className={`${styles["team-container"]} ${styles["left"]}`}>

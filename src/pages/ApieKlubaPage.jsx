@@ -1,9 +1,7 @@
-import { LeagueTable } from "../components/LeagueTable";
-
 export function ApieKlubaPage() {
   return (
     <>
-      <LeagueTable />
+      <h1>Apie Kluba </h1>
     </>
   );
 }

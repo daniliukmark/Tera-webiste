@@ -1,7 +1,13 @@
+.page-wrap {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
 .content-wrap {
   box-sizing: border-box;
   width: 100%;
-  min-height: 100vh;
   margin-top: 100px;
   transition: 300ms;
   display: flex;
