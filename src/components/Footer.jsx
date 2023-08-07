@@ -4,6 +4,7 @@ import { ROUTES, CALLS_FOR_ACTIONS, CONTACTS } from "src/assets/data";
 import phoneIcon from "src/assets/phone.svg";
 import locationIcon from "src/assets/location.svg";
 import emailIcon from "src/assets/email.svg";
+import { useRef, useEffect } from "react";
 
 const intialRoutes = ROUTES;
 const callsForAction = CALLS_FOR_ACTIONS;

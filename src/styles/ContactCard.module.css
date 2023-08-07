@@ -4,6 +4,7 @@
   max-width: 650px;
   height: 250px;
   background-color: black;
+
   color: white;
   border-radius: 10px;
   overflow: hidden;
@@ -56,9 +57,8 @@ h3 {
 }
 @media all and (max-width: 600px) {
   .contact-info-card-wrap {
-    height: 180px;
+    height: 200px;
   }
-
   .contact-img {
     display: none;
   }
@@ -66,12 +66,12 @@ h3 {
     padding: 10px 20px 20px 20px;
   }
   .contact-info li > h1 {
-    font-size: 20px;
+    font-size: 24px;
   }
   .contact-info li > h2 {
-    font-size: 18px;
+    font-size: 20px;
   }
   .contact-info li > h3 {
-    font-size: 16px;
+    font-size: 18px;
   }
 }

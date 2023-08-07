@@ -17,16 +17,24 @@
   justify-content: space-between;
   margin-bottom: 30px;
 }
-.map-wrap {
+.map-background {
   flex: 1;
+  height: 500px;
+  margin-bottom: 30px;
+}
+.map-wrap {
   height: 500px;
   margin-bottom: 30px;
   border-radius: 10px;
   background-color: black;
   overflow: hidden;
 }
+.map {
+  height: 100px;
+}
 .map-background {
   background-color: black;
+  border-radius: 10px;
 }
 @media all and (max-width: 1200px) {
   .content-wrap {
@@ -42,6 +50,10 @@
   }
   .map-wrap {
     margin-bottom: 0px;
+  }
+  .map-background {
+    margin-bottom: 0px;
+    border-radius: 0px;
   }
   .map {
     border-radius: 10px;
