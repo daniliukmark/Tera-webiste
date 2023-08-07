@@ -48,6 +48,10 @@ h3 {
   .contact-info-card-wrap {
     max-width: 100%;
     margin: 10px 0px 0px 0px;
+    border-radius: 0px;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
   }
 }
 @media all and (max-width: 600px) {
