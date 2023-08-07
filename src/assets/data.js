@@ -1,5 +1,7 @@
 export const BASE_URL = "";
 export const CONTACTS = {
+  name: "Sergejus Vasilievas",
+  statusInClub: "Direktorius",
   email: "tera.vilnius@gmail.com",
   phoneNumber: "+37068710033",
   location: "Žolyno g., 10210 Vilnius",
