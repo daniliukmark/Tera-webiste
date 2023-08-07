@@ -30,10 +30,12 @@ export function Footer() {
           >
             <h2>Apie Kluba</h2>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Voluptatem ducimus magni omnis et vitae porro quia nihil officia,
-              veritatis sit libero dicta aut sequi aperiam, doloremque
-              perferendis asperiores quaerat itaque!
+              Vilniaus futbolo klubas „Tera“, o trumpai Vilniaus „Tera“ arba FK
+              „Tera“ – Lietuvos futbolo klubas iš Vilniaus Sovietmečiu komanda
+              įsteigta prie Vilniaus prie troleibuso parko, kuris įkurtas 1956
+              m. 1960 m. komanda pateko į aukščiausiąją lygą, tačiau po sezono
+              iš jos iškrito. Nuo 2007 metų komanda vadinasi FK Tera. Nuo 2021
+              metų komanda rungtyniauja VRFS III lygoje.
             </p>
           </div>
           <div

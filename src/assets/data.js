@@ -1,7 +1,7 @@
 export const BASE_URL = "";
 export const CONTACTS = {
-  email: "email@example.com",
-  phoneNumber: "+37067777777",
+  email: "tera.vilnius@gmail.com",
+  phoneNumber: "+37068710033",
   location: "Žolyno g., 10210 Vilnius",
 };
 
