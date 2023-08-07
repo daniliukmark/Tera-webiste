@@ -25,12 +25,15 @@ export function KontaktaiPage() {
             phoneNumber={CONTACTS.phoneNumber}
           />
         </div>
-        <div className={styles["map"]}>
-          <GoogleMapReact
-            bootstrapURLKeys={{ key: "" }}
-            defaultCenter={defaultProps.center}
-            defaultZoom={defaultProps.zoom}
-          ></GoogleMapReact>
+        <div className={styles["map-background"]}>
+          <div className={styles["map-wrap"]}>
+            <GoogleMapReact
+              className={styles["map"]}
+              bootstrapURLKeys={{ key: "" }}
+              defaultCenter={defaultProps.center}
+              defaultZoom={defaultProps.zoom}
+            ></GoogleMapReact>
+          </div>
         </div>
       </div>
     </>

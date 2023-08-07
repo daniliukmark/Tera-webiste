@@ -17,12 +17,16 @@
   justify-content: space-between;
   margin-bottom: 30px;
 }
-.map {
+.map-wrap {
   flex: 1;
   height: 500px;
   margin-bottom: 30px;
   border-radius: 10px;
+  background-color: black;
   overflow: hidden;
+}
+.map-background {
+  background-color: black;
 }
 @media all and (max-width: 1200px) {
   .content-wrap {
@@ -36,9 +40,10 @@
   .contact-cards-wrap {
     margin-bottom: 0px;
   }
-  .map {
+  .map-wrap {
     margin-bottom: 0px;
+  }
+  .map {
     border-radius: 10px;
-    background-color: black;
   }
 }
