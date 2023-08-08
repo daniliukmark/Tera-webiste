@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import styles from "src/styles/navBar.module.css";
 import logo from "src/assets/logo.png";
 import menuIcon from "src/assets/menu.svg";
@@ -7,11 +7,12 @@ import { ROUTES } from "src/assets/data";
 import { MobileMenu } from "src/components/MobileMenu";
 
 const initialRoutes = ROUTES;
-export function Navbar() {
+export function Navbar({ footerY }) {
   const currentUrl = useLocation();
 
   const [isMenuOpen, setisMenuOpen] = useState(false);
   const [routes, setRoutes] = useState(initialRoutes);
+  let isNavbarColidingFooter = footerY < 80;
 
   function handleToggleMenu() {
     setisMenuOpen(!isMenuOpen);
@@ -43,14 +44,20 @@ export function Navbar() {
         routes={routes}
       />
       <div className={styles["wrap"]}>
-        <div className={styles["nav-wrap"]}>
+        <div
+          className={`${isNavbarColidingFooter ? styles["black-bg"] : ""} ${
+            styles["nav-wrap"]
+          }`}
+        >
           <img className={styles["logo"]} src={logo} alt="FK Teros logotipas" />
           <div className={styles["wrap-list"]}>
             <ul>{routesList}</ul>
           </div>
           <img
             onClick={handleToggleMenu}
-            className={styles["menu-icon"]}
+            className={` ${
+              isNavbarColidingFooter ? styles["white-icon"] : ""
+            } ${styles["menu-icon"]}`}
             src={menuIcon}
             alt="Menu icon"
             draggable={false}

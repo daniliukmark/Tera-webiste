@@ -10,7 +10,20 @@ const intialRoutes = ROUTES;
 const callsForAction = CALLS_FOR_ACTIONS;
 const contactInfo = CONTACTS;
 
-export function Footer() {
+export function Footer({ setFooterY }) {
+  const footerRef = useRef(null);
+
+  useEffect(() => {
+    const getPosition = () => {
+      setFooterY(footerRef.current.getBoundingClientRect().y);
+    };
+    window.addEventListener("scroll", getPosition);
+    getPosition();
+    return () => {
+      window.removeEventListener("scroll", getPosition);
+    };
+  }, []);
+
   const routesList = intialRoutes.map((route) => (
     <li key={route.path} className={styles[""]}>
       <Link to={route.path}>{route.text}</Link>
@@ -24,7 +37,7 @@ export function Footer() {
 
   return (
     <>
-      <footer className={styles["footer-wrap"]}>
+      <footer ref={footerRef} className={styles["footer-wrap"]}>
         <div className={styles["footer-content"]}>
           <div
             className={`${styles["section-about-club"]} ${styles["footer-section"]}`}

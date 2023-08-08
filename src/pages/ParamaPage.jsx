@@ -1,7 +1,9 @@
+import { PromoCampaign } from "../components/PromoCampaign";
+
 export function ParamaPage() {
   return (
     <>
-      <h1>Parama Page</h1>
+      <PromoCampaign />
     </>
   );
 }
