@@ -61,8 +61,8 @@ export function Footer({ setFooterY }) {
           <div
             className={`${styles["section-actions"]} ${styles["footer-section"]}`}
           >
-            <h2>Padek Komandai</h2>
-            <ul>{callsForActionList}</ul>
+            <h2>Siekite mus!</h2>
+            <ul><li><img src={} alt="facebook account link" /></li></ul>
           </div>
           <div
             className={`${styles["section-contacts"]} ${styles["footer-section"]}`}

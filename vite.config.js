@@ -13,4 +13,12 @@ export default defineConfig({
       src: "/src",
     },
   },
+  rewrites() {
+    return [
+      {
+        source: "*",
+        destination: "/",
+      },
+    ];
+  },
 });
