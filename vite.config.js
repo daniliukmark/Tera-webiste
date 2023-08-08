@@ -17,7 +17,7 @@ export default defineConfig({
     return [
       {
         source: "/*",
-        destination: "/",
+        destination: "",
       },
     ];
   },
