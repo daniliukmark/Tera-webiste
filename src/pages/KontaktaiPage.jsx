@@ -7,11 +7,19 @@ import contactImg from "src/assets/contactsPic.webp";
 export function KontaktaiPage() {
   const defaultProps = {
     center: {
-      lat: 10.99835602,
-      lng: 77.01502627,
+      lat: 54.709186,
+      lng: 25.325053,
     },
-    zoom: 11,
+    zoom: 14,
   };
+  const AnyReactComponent = ({ text }) => (
+    <div
+      id="marker"
+      style={{ backgroundColor: "black", height: "20px", width: "20px" }}
+    >
+      {text}
+    </div>
+  );
   return (
     <>
       <h1 className={styles["header"]}>Kontaktai</h1>
@@ -25,6 +33,7 @@ export function KontaktaiPage() {
             phoneNumber={CONTACTS.phoneNumber}
           />
         </div>
+
         <div className={styles["map-background"]}>
           <div className={styles["map-wrap"]}>
             <GoogleMapReact
@@ -32,7 +41,13 @@ export function KontaktaiPage() {
               bootstrapURLKeys={{ key: "" }}
               defaultCenter={defaultProps.center}
               defaultZoom={defaultProps.zoom}
-            ></GoogleMapReact>
+            >
+              <AnyReactComponent
+                lat={59.955413}
+                lng={30.337844}
+                text="My Marker"
+              />
+            </GoogleMapReact>
           </div>
         </div>
       </div>
