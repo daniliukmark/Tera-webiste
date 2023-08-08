@@ -16,7 +16,7 @@ export default defineConfig({
   rewrites() {
     return [
       {
-        source: "*",
+        source: "/*",
         destination: "/",
       },
     ];
