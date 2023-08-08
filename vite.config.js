@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     host: true,
   },
-  base: " ",
+  base: "",
   plugins: [react()],
   resolve: {
     alias: {
