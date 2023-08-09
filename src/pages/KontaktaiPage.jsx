@@ -13,7 +13,7 @@ export function KontaktaiPage() {
     zoom: 14,
   };
   const AnyReactComponent = () => (
-    <img src={pinIcon} style={{ filter: "invert(100%)", width: "30px" }} />
+    <img src={pinIcon} style={{ filter: "invert(100%)", height: "40px" }} />
   );
   return (
     <>
@@ -34,14 +34,11 @@ export function KontaktaiPage() {
             <GoogleMapReact
               className={styles["map"]}
               bootstrapURLKeys={{ key: "" }}
+              yesIWantToUseGoogleMapApiInternals
               defaultCenter={defaultProps.center}
               defaultZoom={defaultProps.zoom}
             >
-              <AnyReactComponent
-                lat={54.709186}
-                lng={25.325053}
-                text="My Marker"
-              />
+              <AnyReactComponent lat={54.709186} lng={25.32505} />
             </GoogleMapReact>
           </div>
         </div>
