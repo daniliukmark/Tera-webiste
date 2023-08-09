@@ -14,7 +14,7 @@ export function KontaktaiPage() {
   };
   const AnyReactComponent = ({ text }) => (
     <div
-      id="marker"
+      id="markerr"
       style={{ backgroundColor: "black", height: "20px", width: "20px" }}
     >
       {text}

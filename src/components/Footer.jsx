@@ -33,7 +33,7 @@ export function Footer({ setFooterY }) {
     return () => {
       window.removeEventListener("scroll", getPosition);
     };
-  }, []);
+  }, [setFooterY]);
 
   const routesList = intialRoutes.map((route) => (
     <li key={route.path} className={styles[""]}>
