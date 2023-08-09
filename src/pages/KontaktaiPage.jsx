@@ -4,6 +4,8 @@ import GoogleMapReact from "google-map-react";
 import styles from "src/styles/kontaktaiPage.module.css";
 import contactImg from "src/assets/contactsPic.webp";
 import pinIcon from "src/assets/location.svg";
+import tipIcon from "src/assets/tipIcon.svg";
+
 export function KontaktaiPage() {
   const defaultProps = {
     center: {
@@ -20,13 +22,20 @@ export function KontaktaiPage() {
       <h1 className={styles["header"]}>Kontaktai</h1>
       <div className={styles["content-wrap"]}>
         <div className={styles["contact-cards-wrap"]}>
+          <div className={styles["tip-wrap"]}>
+            <img className={styles["tip-icon"]} src={tipIcon} alt="tip icon" />
+            <span className={styles["tip-text"]}>
+              Jei tutite klausimu ar problemu - skambinkite, mes mielai juos
+              issperesime.
+            </span>
+          </div>
           <ContactInfoCard
             contactImg={contactImg}
             statusInClub={CONTACTS.statusInClub}
             name={CONTACTS.name}
             email={CONTACTS.email}
             phoneNumber={CONTACTS.phoneNumber}
-          />
+          />{" "}
         </div>
 
         <div className={styles["map-background"]}>

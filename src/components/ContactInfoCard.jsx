@@ -36,7 +36,7 @@ export function ContactInfoCard({
                 alt="Phone icon"
               />
               <h3>
-                Tel. Numeris: <b>{phoneNumber}</b>
+                <b>{phoneNumber}</b>
               </h3>
             </li>
             <li>
@@ -46,7 +46,7 @@ export function ContactInfoCard({
                 alt="Email icon"
               />
               <h3>
-                Email: <b>{email} </b>
+                <b>{email} </b>
               </h3>
             </li>
           </ul>

@@ -7,14 +7,16 @@
   font-size: 40px;
   width: 100%;
   margin: 0px;
+  margin-bottom: 10px;
 }
 .contact-cards-wrap {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   gap: 10px;
   flex: 1;
   width: 650px;
-  justify-content: space-between;
+  justify-content: start;
   margin-bottom: 30px;
 }
 .map-background {
@@ -36,6 +38,20 @@
   background-color: black;
   border-radius: 10px;
 }
+.tip-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 24px;
+  height: 50px;
+  width: max-content;
+  padding: 0px 20px;
+  background-color: #ededed;
+  border: solid 3px #f2f2f2;
+}
+.tip-icon {
+  width: 30px;
+}
 @media all and (max-width: 1200px) {
   .content-wrap {
     display: block;
@@ -47,6 +63,11 @@
 @media all and (max-width: 800px) {
   .contact-cards-wrap {
     margin-bottom: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex: 1;
+    justify-content: space-between;
   }
   .map-wrap {
     margin-bottom: 0px;
