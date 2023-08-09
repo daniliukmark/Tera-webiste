@@ -5,6 +5,7 @@
   width: 500px;
 }
 .league-table-wrap {
+  box-sizing: border-box;
   background-color: #ededed;
   height: 435px;
 
