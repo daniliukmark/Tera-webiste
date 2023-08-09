@@ -3,7 +3,7 @@ import { CONTACTS } from "src/assets/data";
 import GoogleMapReact from "google-map-react";
 import styles from "src/styles/kontaktaiPage.module.css";
 import contactImg from "src/assets/contactsPic.webp";
-
+import pinIcon from "src/assets/location.svg";
 export function KontaktaiPage() {
   const defaultProps = {
     center: {
@@ -12,13 +12,8 @@ export function KontaktaiPage() {
     },
     zoom: 14,
   };
-  const AnyReactComponent = ({ text }) => (
-    <div
-      id="markerr"
-      style={{ backgroundColor: "black", height: "20px", width: "20px" }}
-    >
-      {text}
-    </div>
+  const AnyReactComponent = () => (
+    <img src={pinIcon} style={{ filter: "invert(100%)", width: "30px" }} />
   );
   return (
     <>
@@ -43,8 +38,8 @@ export function KontaktaiPage() {
               defaultZoom={defaultProps.zoom}
             >
               <AnyReactComponent
-                lat={59.955413}
-                lng={30.337844}
+                lat={54.709186}
+                lng={25.325053}
                 text="My Marker"
               />
             </GoogleMapReact>
