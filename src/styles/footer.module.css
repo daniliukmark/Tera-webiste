@@ -65,10 +65,14 @@
   margin-top: 10px;
 }
 .section-contacts li {
+  width: 100%;
   display: flex;
   align-items: start;
 }
-
+.section-actions ul {
+  display: flex;
+  align-items: start;
+}
 .section-contacts img {
   height: 20px;
   margin-right: 8px;
@@ -76,7 +80,10 @@
 
   filter: invert(100%);
 }
-
+.icon {
+  filter: invert(100%);
+  height: 40px;
+}
 @media all and (max-width: 1200px) {
   .footer-wrap {
     padding: 30px 10px 50px 10px;
@@ -93,5 +100,9 @@
   .footer-section {
     width: 100%;
     margin-bottom: 20px;
+  }
+  .section-actions ul {
+    flex-direction: row;
+    gap: 30px;
   }
 }

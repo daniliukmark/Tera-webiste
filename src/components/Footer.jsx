@@ -1,6 +1,8 @@
 import styles from "src/styles/footer.module.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ROUTES, CALLS_FOR_ACTIONS, CONTACTS } from "src/assets/data";
+import facebookIcon from "src/assets/facebookIcon.svg";
+import youtubeIcon from "src/assets/youtubeIcon.svg";
 import phoneIcon from "src/assets/phone.svg";
 import locationIcon from "src/assets/location.svg";
 import emailIcon from "src/assets/email.svg";
@@ -9,10 +11,19 @@ import { useRef, useEffect } from "react";
 const intialRoutes = ROUTES;
 const callsForAction = CALLS_FOR_ACTIONS;
 const contactInfo = CONTACTS;
-
+const FACEBOOK_PAGE_URL =
+  "https://www.facebook.com/profile.php?id=100060685733928";
+const YOUTUBE_PAGE_URL =
+  "https://www.youtube.com/channel/UC0I80WYUz4jt5f5Rgvm_RdA";
 export function Footer({ setFooterY }) {
   const footerRef = useRef(null);
 
+  const navigateToFacebook = () => {
+    window.location.replace(FACEBOOK_PAGE_URL);
+  };
+  const navigateToYoutube = () => {
+    window.location.replace(YOUTUBE_PAGE_URL);
+  };
   useEffect(() => {
     const getPosition = () => {
       setFooterY(footerRef.current.getBoundingClientRect().y);
@@ -59,12 +70,6 @@ export function Footer({ setFooterY }) {
             <ul>{routesList}</ul>
           </div>
           <div
-            className={`${styles["section-actions"]} ${styles["footer-section"]}`}
-          >
-            <h2>Siekite mus!</h2>
-            <ul><li><img src={} alt="facebook account link" /></li></ul>
-          </div>
-          <div
             className={`${styles["section-contacts"]} ${styles["footer-section"]}`}
           >
             <h2>Kontaktai</h2>
@@ -80,6 +85,28 @@ export function Footer({ setFooterY }) {
               <li>
                 <img src={emailIcon} alt="Email icon" />
                 <span>{contactInfo.email}</span>
+              </li>
+            </ul>
+          </div>
+          <div
+            className={`${styles["section-actions"]} ${styles["footer-section"]}`}
+          >
+            <ul>
+              <li>
+                <img
+                  onClick={navigateToFacebook}
+                  className={styles["icon"]}
+                  src={facebookIcon}
+                  alt="facebook link"
+                />
+              </li>
+              <li>
+                <img
+                  onClick={navigateToYoutube}
+                  className={styles["icon"]}
+                  src={youtubeIcon}
+                  alt="youtube link"
+                />
               </li>
             </ul>
           </div>
