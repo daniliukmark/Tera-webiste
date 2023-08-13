@@ -1,0 +1,67 @@
+.card-wrap {
+  background: white;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 10px;
+  transition: 300ms;
+  border-bottom: solid 3px #f2f2f2;
+}
+.card-wrap.large {
+  height: 150px;
+}
+.card-wrap.large:hover {
+  height: 200px;
+}
+.card-wrap.medium {
+  height: 100px;
+}
+.card-wrap.medium:hover {
+  height: 150px;
+}
+.card-wrap:hover {
+  background: #ededed;
+}
+.card-content-wrap {
+  box-sizing: border-box;
+  height: 100%;
+}
+.person-photo {
+  height: 100%;
+  background: url(/src/assets/contactsPic.webp);
+  background-position: center;
+  aspect-ratio: 1/1;
+  transition: 300ms;
+}
+.person-photo.large {
+  background-size: 200px;
+}
+.person-photo.medium {
+  background-size: 150px;
+}
+.card-wrap:hover .person-photo {
+  transition: 300ms;
+}
+
+@media all and (max-width: 600px) {
+  .card-wrap.large {
+    height: 100px;
+    transition: 300ms;
+  }
+  .card-wrap.large:hover {
+    height: 150px;
+  }
+  .card-wrap.medium {
+    height: 100px;
+    transition: 300ms;
+  }
+  .card-wrap.medium:hover {
+    height: 150px;
+  }
+  .person-photo.large {
+    background-size: 150px;
+  }
+  .person-photo.medium {
+    background-size: 150px;
+  }
+}

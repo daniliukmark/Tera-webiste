@@ -33,10 +33,10 @@
 }
 .map {
   height: 100px;
+  border-radius: 28px;
 }
 .map-background {
-  background-color: black;
-  border-radius: 10px;
+  border-radius: 28px;
 }
 .tip-wrap {
   box-sizing: border-box;
@@ -44,7 +44,7 @@
   align-items: center;
   gap: 10px;
   border-radius: 24px;
-  height: 60px;
+  min-height: 60px;
   width: 100%;
   max-width: max-content;
   padding: 5px 20px;
@@ -73,6 +73,7 @@
   }
   .map-wrap {
     margin-bottom: 0px;
+    border-radius: 10px;
   }
   .map-background {
     margin-bottom: 0px;

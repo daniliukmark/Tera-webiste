@@ -1,16 +1,18 @@
+.wrap {
+  position: relative;
+  max-width: 100%;
+}
 .contact-info-card-wrap {
+  position: relative;
+  max-width: 100%;
   box-sizing: border-box;
-  width: 100%;
-  max-width: 650px;
-  height: 250px;
   background-color: #ededed;
   border: solid 3px #f2f2f2;
   color: black;
   border-radius: 10px;
-  overflow: hidden;
+
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
   gap: 20px;
   padding: 0px 40px;
 }
@@ -19,16 +21,25 @@
   height: 180px;
   border-radius: 10px;
 }
-
 .contact-info-wrap {
-  width: 100%;
-}
-.contact-info {
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
+  justify-content: center;
+  gap: 10px;
+  padding: 40px 20px;
+}
+
+.header {
+  margin: 0px;
+}
+
+.contact-info {
+  box-sizing: border-box;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 10px;
   margin: 0px;
 }
 
@@ -46,13 +57,34 @@ h3 {
   height: 20px;
   margin-right: 10px;
 }
+.header-medium {
+  font-size: 24px;
+}
+.contact-field-medium > h2 {
+  font-size: 18px;
+}
+.contact-field-medium > span {
+  font-size: 16px;
+}
+
+.header-small {
+  font-size: 20px;
+}
+.contact-field-small > h2 {
+  font-size: 14px;
+}
+.contact-field-small > span {
+  font-size: 12px;
+}
 @media all and (max-width: 800px) {
   .contact-info-card-wrap {
+    box-sizing: border-box;
+  }
+  .wrap {
+    width: 100%;
+  }
+  .contact-card-blur {
     max-width: 100%;
-    border-radius: 0px;
-
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
   }
 }
 @media all and (max-width: 600px) {
@@ -60,19 +92,30 @@ h3 {
     height: 200px;
     padding: 0px 10px;
   }
+  .contact-info-wrap {
+    padding: 0px;
+  }
   .contact-img {
     display: none;
   }
-  .contact-info {
-    padding: 10px 20px 20px 20px;
-  }
-  .contact-info li > h1 {
-    font-size: 24px;
-  }
-  .contact-info li > h2 {
+
+  .header-medium {
     font-size: 20px;
   }
-  .contact-info li > h3 {
-    font-size: 18px;
+  .contact-field-medium > h2 {
+    font-size: 16px;
+  }
+  .contact-field-medium > span {
+    font-size: 14px;
+  }
+
+  .header-small {
+    font-size: 20px;
+  }
+  .contact-field-small > h2 {
+    font-size: 14px;
+  }
+  .contact-field-small > span {
+    font-size: 12px;
   }
 }

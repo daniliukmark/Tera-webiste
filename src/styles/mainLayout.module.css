@@ -9,7 +9,7 @@
 .content-wrap {
   box-sizing: border-box;
   width: 100%;
-  margin-top: 100px;
+  margin-top: 110px;
   transition: 300ms;
   display: flex;
   flex-direction: column;
@@ -30,12 +30,17 @@ section.content {
 
 @media all and (max-width: 1200px) {
   section.content {
-    max-width: 1000px;
+    max-width: 900px;
   }
 }
 
 @media all and (max-width: 1000px) {
   section.content {
     max-width: 800px;
+  }
+}
+@media all and (max-width: 500px) {
+  .content-wrap {
+    margin-top: 70px;
   }
 }

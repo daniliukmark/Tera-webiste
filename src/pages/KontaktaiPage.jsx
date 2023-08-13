@@ -3,8 +3,34 @@ import { CONTACTS } from "src/assets/data";
 import GoogleMapReact from "google-map-react";
 import styles from "src/styles/kontaktaiPage.module.css";
 import contactImg from "src/assets/contactsPic.webp";
+import phoneIcon from "src/assets/phone.svg";
+import emailIcon from "src/assets/email.svg";
 import pinIcon from "src/assets/location.svg";
 import tipIcon from "src/assets/tipIcon.svg";
+
+const iconStyles = {
+  width: "20px",
+  marginRight: "10px",
+};
+const ContactCardFields = [
+  <>
+    <h2>
+      <b>{CONTACTS.name}</b>
+    </h2>
+  </>,
+  <>
+    <img style={iconStyles} src={phoneIcon} alt="Phone icon" />
+    <h3>
+      <b>{CONTACTS.phoneNumber}</b>
+    </h3>
+  </>,
+  <>
+    <img style={iconStyles} src={emailIcon} alt="Email icon" />
+    <h3>
+      <b>{CONTACTS.email} </b>
+    </h3>
+  </>,
+];
 
 export function KontaktaiPage() {
   const defaultProps = {
@@ -19,7 +45,6 @@ export function KontaktaiPage() {
   );
   return (
     <>
-      <h1 className={styles["header"]}>Kontaktai</h1>
       <div className={styles["content-wrap"]}>
         <div className={styles["contact-cards-wrap"]}>
           <div className={styles["tip-wrap"]}>
@@ -30,12 +55,10 @@ export function KontaktaiPage() {
             </span>
           </div>
           <ContactInfoCard
-            contactImg={contactImg}
-            statusInClub={CONTACTS.statusInClub}
-            name={CONTACTS.name}
-            email={CONTACTS.email}
-            phoneNumber={CONTACTS.phoneNumber}
-          />{" "}
+            personImage={contactImg}
+            headerValue={"Direktorius"}
+            propertiesFields={ContactCardFields}
+          />
         </div>
 
         <div className={styles["map-background"]}>

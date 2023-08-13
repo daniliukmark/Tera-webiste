@@ -1,0 +1,97 @@
+.header-wrap {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 10px 0px;
+}
+.header {
+  text-align: left;
+  color: black;
+  font-size: 40px;
+  margin: 0px;
+}
+.stripe {
+  display: flex;
+  width: 30px;
+}
+.red {
+  background-color: var(--red);
+}
+.green {
+  background-color: var(--green);
+}
+.white {
+  background-color: white;
+}
+.black {
+  background-color: black;
+}
+.stripe * {
+  flex: 1;
+}
+.team-wrap {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  gap: 30px;
+}
+.team-content {
+  border-radius: 10px;
+
+  width: 100%;
+  padding: 0px 30px 0px 0px;
+}
+.team-executives {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.best-players-list {
+  width: min-content;
+  display: flex;
+  flex-direction: column;
+  align-content: end;
+}
+.best-players-header {
+  background-color: black;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.best-players-header * {
+  text-align: center;
+  font-style: italic;
+  color: white;
+  margin: 0px;
+  font-size: 28px;
+}
+.team-table-wrap {
+  border-radius: 10px;
+}
+.team-table {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+@media all and (max-width: 1200px) {
+  .team-content {
+    padding: 10px 20px 10px 20px;
+  }
+}
+@media all and (max-width: 800px) {
+  .header {
+    font-size: 30px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .best-players-list {
+    display: none;
+  }
+  .team-executives {
+    gap: 10px;
+  }
+}

@@ -1,55 +1,72 @@
 import styles from "src/styles/ContactCard.module.css";
-import phoneIcon from "src/assets/phone.svg";
-import emailIcon from "src/assets/email.svg";
-
 export function ContactInfoCard({
-  contactImg,
-  statusInClub,
-  name,
-  email,
-  phoneNumber,
+  personImage,
+  headerValue,
+  propertiesFields,
+  size,
 }) {
+  size === undefined ? (size = "medium") : size;
+
+  const sizes = {
+    small: {
+      photoSize: {
+        height: "100px",
+      },
+      wrapSize: {
+        maxWidth: "420px",
+        maxHeight: "160px",
+      },
+    },
+    medium: {
+      wrapSize: {
+        maxWidth: "500px",
+        maxHeight: "200px",
+      },
+      photoSize: {
+        height: "140px",
+      },
+    },
+    large: {
+      wrapSize: {
+        maxWidth: "650px",
+        maxHeight: "250px",
+      },
+      photoSize: {
+        height: "180px",
+      },
+    },
+  };
+
   return (
     <>
-      <div className={styles["contact-info-card-wrap"]}>
-        <img
-          src={contactImg}
-          alt="image of owner of the contact information"
-          className={styles["contact-img"]}
-        />
-        <div className={styles["contact-info-wrap"]}>
-          <ul className={styles["contact-info"]}>
-            <li>
-              <h1>
-                <b>{statusInClub}</b>
-              </h1>
-            </li>
-            <li>
-              <h2>
-                <b>{name}</b>
-              </h2>
-            </li>
-            <li>
-              <img
-                className={styles["icon"]}
-                src={phoneIcon}
-                alt="Phone icon"
-              />
-              <h3>
-                <b>{phoneNumber}</b>
-              </h3>
-            </li>
-            <li>
-              <img
-                className={styles["icon"]}
-                src={emailIcon}
-                alt="Email icon"
-              />
-              <h3>
-                <b>{email} </b>
-              </h3>
-            </li>
-          </ul>
+      <div className={styles["wrap"]}>
+        <div
+          className={`${styles["contact-card-blur"]} ${styles[`${size}`]}`}
+        ></div>
+        <div
+          style={sizes[size].wrapSize}
+          className={styles["contact-info-card-wrap"]}
+        >
+          <img
+            src={personImage}
+            style={sizes[size].photoSize}
+            alt={`image of ${headerValue}`}
+            className={styles["contact-img"]}
+          />
+          <div className={styles["contact-info-wrap"]}>
+            <h1 className={`${styles["header"]} ${styles[`header-${size}`]}`}>
+              {headerValue}
+            </h1>
+            <ul className={styles["contact-info"]}>
+              {propertiesFields != null
+                ? propertiesFields.map((propertiesField, i) => (
+                    <li className={styles[`contact-field-${size}`]} key={i}>
+                      {propertiesField}
+                    </li>
+                  ))
+                : ""}
+            </ul>
+          </div>
         </div>
       </div>
     </>
