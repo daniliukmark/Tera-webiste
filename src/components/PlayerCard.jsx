@@ -1,4 +1,4 @@
-import styles from "src/styles/playerCard.module.css";
+import styles from "src/styles/PlayerCard.module.css";
 import photo from "src/assets/contactsPic.webp";
 function PlayerCard({
   isCardPositionFixed,
