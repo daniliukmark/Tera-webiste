@@ -78,7 +78,6 @@ function PlayerCard({
             </ul>
           </section>
         </div>
-        <div className={styles["player-card-blur"]}></div>
       </div>
     </div>
   );

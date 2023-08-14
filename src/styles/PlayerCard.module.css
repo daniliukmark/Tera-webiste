@@ -2,36 +2,23 @@
   display: inline-block;
   position: relative;
   border-radius: 10px;
-  margin: 20px;
   height: 400px;
   width: 250px;
-  background-color: #ededed;
+  background-color: #e3e3e3;
+  border: solid 3px #f2f2f2;
 }
-.player-card-blur {
-  position: absolute;
-  box-sizing: border-box;
-  width: 290px;
-  height: 440px;
-  padding: 20px;
-  top: -20px;
-  right: -20px;
-  backdrop-filter: blur(6px);
-  border-radius: 28px;
-  z-index: -1;
-  background-color: rgba(0, 0, 0, 0.25);
-  border: solid 3px rgba(255, 255, 255, 0.5);
-}
+
 .player-card {
-  z-index: 2;
   height: 100%;
   width: 100%;
   display: flex;
+  overflow: hidden;
   justify-content: space-evenly;
-  align-content: center;
   gap: 10px;
   flex-wrap: wrap;
   margin: 0px;
 }
+
 .header {
   display: flex;
   justify-content: center;
@@ -52,7 +39,7 @@
 
 .player-photo {
   border-radius: 10px;
-  height: 200px;
+  height: 250px;
   aspect-ratio: 1/1;
 }
 @media all and (max-width: 1400px) {
