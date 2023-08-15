@@ -53,7 +53,7 @@ export function Footer({ setFooterY }) {
           <div
             className={`${styles["section-about-club"]} ${styles["footer-section"]}`}
           >
-            <h2>Apie Kluba</h2>
+            <h2>Apie Klubą</h2>
             <p>
               Vilniaus futbolo klubas „Tera“, o trumpai Vilniaus „Tera“ arba FK
               „Tera“ – Lietuvos futbolo klubas iš Vilniaus Sovietmečiu komanda

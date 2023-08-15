@@ -26,7 +26,7 @@ export function LeagueTable() {
         <img className={styles["arrow-down-icon"]} src={arrowDownIcon} />
         <div className={styles["league-table-wrap"]}>
           <div className={styles["table-header"]}>
-            <h1>Turnirine Lentele</h1>
+            <h1>Turnyrinė Lentelė</h1>
           </div>
           <table className={styles["league-table"]}>
             <thead>

@@ -15,7 +15,7 @@ export function PromoCampaign() {
             <h1 className={styles["main-pitch"]}>
               <i>
                 Tapk Teros <br />
-                Remeju!
+                Rėmėju!
               </i>
             </h1>
           </div>

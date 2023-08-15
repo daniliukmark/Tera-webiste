@@ -15,7 +15,7 @@ export const ROUTES = [
   },
   {
     path: `${BASE_URL}/klubas`,
-    text: "Apie Kluba",
+    text: "Apie Klubą",
     isSelected: false,
   },
   {
@@ -44,7 +44,7 @@ export const CALLS_FOR_ACTIONS = [
   {
     path: "/",
     componentId: "next-match",
-    text: "Sekancios Rungtynes",
+    text: "Sekančios Rungtynės",
   },
 ];
 

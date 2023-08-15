@@ -50,8 +50,8 @@ export function KontaktaiPage() {
           <div className={styles["tip-wrap"]}>
             <img className={styles["tip-icon"]} src={tipIcon} alt="tip icon" />
             <span className={styles["tip-text"]}>
-              Jei tutite klausimu ar problemu - skambinkite, mes mielai juos
-              issperesime.
+              Jei turite klausimų ar problemų - skambinkite, mes mielai juos
+              išspręsime.
             </span>
           </div>
           <ContactInfoCard

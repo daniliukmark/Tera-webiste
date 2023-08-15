@@ -1,0 +1,46 @@
+.news-card-wrap {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 270px;
+  overflow: hidden;
+  background-color: white;
+  border-left: solid 3px #fff;
+
+  border-bottom: solid 3px #fff;
+
+  border-radius: 10px;
+}
+.header-content {
+  flex: 3;
+  display: flex;
+  align-items: start;
+  background: url(/src/assets/photoNews.jpeg) center;
+  background-size: 500px auto;
+}
+.header {
+  width: 100%;
+  font-size: 24px;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  flex: 1;
+  padding: 10px 10px 20px 10px;
+}
+.content-snippet {
+  margin: 0px;
+  font-size: 16px;
+}
+.link {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+.link *:hover {
+  opacity: 0.7;
+}

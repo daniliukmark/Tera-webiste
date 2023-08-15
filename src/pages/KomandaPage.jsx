@@ -1,6 +1,7 @@
 import styles from "src/styles/TeamPage.module.css";
 import ExecutiveCard from "src/components/ExecutiveCard";
 import PlayerCard from "src/components/PlayerCard";
+import NewsCard from "../components/NewsCard";
 export function KomandaPage() {
   const contactsField1 = [
     <>
@@ -48,7 +49,7 @@ export function KomandaPage() {
                 <div className={styles["red"]} />
                 <div className={styles["black"]} />
               </div>
-              <h1 className={styles["header"]}>Puolejai</h1>
+              <h1 className={styles["header"]}>Puolėjai</h1>
             </div>
             <div className={styles["team-table"]}>
               <ExecutiveCard size="medium" />
@@ -81,7 +82,7 @@ export function KomandaPage() {
                 <div className={styles["red"]} />
                 <div className={styles["black"]} />
               </div>
-              <h1 className={styles["header"]}>Ginejai</h1>
+              <h1 className={styles["header"]}>Ginėjai</h1>
             </div>
             <div className={styles["team-table"]}>
               <ExecutiveCard size="medium" />
@@ -107,9 +108,26 @@ export function KomandaPage() {
           </div>
         </section>
         <section className={styles["best-players-list"]}>
-          <div className={styles["best-players-header"]}></div>
+          <div
+            style={{
+              borderBottom: "solid 3px #fff",
+              borderLeft: "solid 3px #fff",
 
-          <PlayerCard />
+              background: "white",
+            }}
+            className={styles["header-wrap"]}
+          >
+            <div className={styles["stripe"]}>
+              <div className={styles["green"]} />
+              <div className={styles["white"]} />
+              <div className={styles["red"]} />
+              <div className={styles["black"]} />
+            </div>
+            <h1 className={styles["header"]}>Naujienos</h1>
+          </div>
+          <NewsCard />
+          <NewsCard />
+          <NewsCard />
         </section>
       </div>
     </>
