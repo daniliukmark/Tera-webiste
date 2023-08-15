@@ -14,14 +14,16 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path={`${BASE_URL}/`} element={<MainLayout />}>
-          <Route index element={<PagrindinisPage />} />
-          <Route path="klubas" element={<ApieKlubaPage />} />
-          <Route path="parama" element={<ParamaPage />} />
-          <Route path="komanda" element={<KomandaPage />} />
-          <Route path="kontaktai" element={<KontaktaiPage />} />
-          <Route path="/rungtynes/:id" element={<RungtyniuDetalesPage />} />
-          <Route path="*" element={<NotFoundPage />} />
+        <Route path="*">
+          <Route path={`${BASE_URL}/`} element={<MainLayout />}>
+            <Route index element={<PagrindinisPage />} />
+            <Route path="klubas" element={<ApieKlubaPage />} />
+            <Route path="parama" element={<ParamaPage />} />
+            <Route path="komanda" element={<KomandaPage />} />
+            <Route path="kontaktai" element={<KontaktaiPage />} />
+            <Route path="/rungtynes/:id" element={<RungtyniuDetalesPage />} />
+            <Route path="*" element={<NotFoundPage />} />
+          </Route>
         </Route>
       </Routes>
     </>
