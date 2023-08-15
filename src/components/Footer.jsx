@@ -40,11 +40,6 @@ export function Footer({ setFooterY }) {
       <Link to={route.path}>{route.text}</Link>
     </li>
   ));
-  const callsForActionList = callsForAction.map((route) => (
-    <li key={route.componentId} className={styles[""]}>
-      <Link to={route.path}>{route.text}</Link>
-    </li>
-  ));
 
   return (
     <>

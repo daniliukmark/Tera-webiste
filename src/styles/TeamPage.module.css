@@ -1,12 +1,16 @@
 .header-wrap {
   box-sizing: border-box;
+  border-bottom: solid 3px white;
+  width: min-content;
   display: flex;
   flex-direction: row;
   gap: 10px;
   border-radius: 10px;
   overflow: hidden;
 }
+
 .header {
+  box-sizing: border-box;
   text-align: left;
   color: black;
   font-size: 40px;
@@ -88,6 +92,9 @@
   }
 }
 @media all and (max-width: 800px) {
+  .header-wrap {
+    border-bottom: solid 0px white;
+  }
   .header {
     font-size: 30px;
     border-radius: 10px;

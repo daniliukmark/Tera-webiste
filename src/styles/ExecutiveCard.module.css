@@ -20,7 +20,7 @@
   height: 150px;
 }
 .card-wrap:hover {
-  background: #ededed;
+  background: #f2f2f2;
 }
 .card-content-wrap {
   box-sizing: border-box;

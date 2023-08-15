@@ -4,7 +4,7 @@ function NewsCard({ postPath }) {
   return (
     <>
       <div className={styles["news-card-wrap"]}>
-        <div className={styles["card-ceontent"]}>
+        <div className={styles["card-content"]}>
           <h1 className={styles["header"]}>
             <i>Pasiruosimas sezuonui pradetas</i>
           </h1>

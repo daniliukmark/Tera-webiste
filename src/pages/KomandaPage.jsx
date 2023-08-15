@@ -110,9 +110,6 @@ export function KomandaPage() {
         <section className={styles["best-players-list"]}>
           <div
             style={{
-              borderBottom: "solid 3px #fff",
-              borderLeft: "solid 3px #fff",
-
               background: "white",
             }}
             className={styles["header-wrap"]}
