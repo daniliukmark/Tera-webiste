@@ -17,6 +17,13 @@
   background: url(/src/assets/photoNews.jpeg) center;
   background-size: 500px auto;
 }
+.header-dim {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  transition: 300ms;
+}
 .header {
   width: 100%;
   font-size: 24px;
@@ -49,4 +56,8 @@
   background-color: #f2f2f2;
   transition: 500ms;
   flex: 3;
+}
+.news-card-wrap:hover > .header-content > .header-dim {
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: 500ms;
 }

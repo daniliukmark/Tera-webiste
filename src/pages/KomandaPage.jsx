@@ -111,6 +111,7 @@ export function KomandaPage() {
           <div
             style={{
               background: "white",
+              width: "100%",
             }}
             className={styles["header-wrap"]}
           >
@@ -122,9 +123,11 @@ export function KomandaPage() {
             </div>
             <h1 className={styles["header"]}>Naujienos</h1>
           </div>
-          <NewsCard />
-          <NewsCard />
-          <NewsCard />
+          <NewsCard
+            postPath={
+              "https://www.facebook.com/permalink.php?story_fbid=pfbid02m9XNELpXGcu1Sh5Tz7FVkch2HVwutejWGTyyJ4s9brhUYmVNYCLA7u1SNdBZpi82l&id=100060685733928"
+            }
+          />
         </section>
       </div>
     </>
