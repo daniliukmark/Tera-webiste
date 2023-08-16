@@ -22,7 +22,9 @@ function NewsCard({ postPath }) {
         </div>
         <div className={styles["header-content"]}>
           <div
-            onClick={() => handleNavigateToArticle(postPath)}
+            onClick={() => {
+              handleNavigateToArticle(postPath);
+            }}
             className={styles["header-dim"]}
           ></div>
         </div>
