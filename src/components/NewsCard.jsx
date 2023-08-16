@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import styles from "src/styles/NewsCard.module.css";
 function NewsCard({ postPath }) {
+  const handleNavigateTo = ()
   return (
     <>
       <div className={styles["news-card-wrap"]}>
@@ -15,7 +16,9 @@ function NewsCard({ postPath }) {
             <b>Suzinoti Daugiau...</b>
           </Link>
         </div>
-        <div className={styles["header-content"]}></div>
+        <div className={styles["header-content"]}>
+          <div className={styles["header-dim"]}></div>
+        </div>
       </div>
     </>
   );
