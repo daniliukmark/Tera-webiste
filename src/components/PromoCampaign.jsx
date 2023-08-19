@@ -1,10 +1,22 @@
 import { useNavigate } from "react-router-dom";
 import styles from "src/styles/PromoCampaign.module.css";
 import { BASE_URL } from "src/assets/data";
-
-export function PromoCampaign() {
+const actionButton = new Map();
+export function PromoCampaign({ type }) {
   const navigate = useNavigate();
   const navigateToPromoPage = () => navigate(`${BASE_URL}/parama`);
+  actionButton.set(
+    "mainPage",
+    <button onClick={navigateToPromoPage} className={styles["promo-button"]}>
+      <i>Paremti FK Tera</i>
+    </button>
+  );
+  actionButton.set(
+    "paramaPage",
+    <button onClick={navigateToPromoPage} className={styles["promo-button"]}>
+      <i>Paremti FK Ter</i>
+    </button>
+  );
   return (
     <>
       <div id="promo" className={styles["promo-wrap"]}>
@@ -19,12 +31,7 @@ export function PromoCampaign() {
               </i>
             </h1>
           </div>
-          <button
-            onClick={navigateToPromoPage}
-            className={styles["promo-button"]}
-          >
-            <i>Paremti FK Tera</i>
-          </button>
+          {actionButton.get(type)}
         </div>
       </div>
     </>

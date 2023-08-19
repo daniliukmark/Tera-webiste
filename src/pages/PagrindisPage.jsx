@@ -10,7 +10,7 @@ export function PagrindinisPage() {
         <LeagueTable />
       </section>
       <section className={styles["section-2"]}>
-        <PromoCampaign />
+        <PromoCampaign type={"mainPage"} />
       </section>
     </>
   );

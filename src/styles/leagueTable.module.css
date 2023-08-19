@@ -14,7 +14,7 @@
   border: solid 3px #f2f2f2;
 }
 .table-header {
-  background-color: rgba(0, 0, 0, 0.5);
+  background: #e3e3e3;
 
   height: 40px;
   font-weight: bold;
@@ -23,14 +23,13 @@
   align-items: center;
 }
 .table-footer {
-  background-color: black;
+  background-color: #e3e3e3;
   height: 10px;
 }
 
 .table-header,
 .table-footer > h1 {
   margin: 0;
-  color: white;
 }
 .league-table {
   position: relative;

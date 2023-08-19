@@ -94,14 +94,18 @@
   border-bottom-right-radius: 10px;
   background-color: white;
   border: 0px;
-  padding: 0px 15px 0px 15px;
+  padding: 0px 25px 0px 25px;
   font-weight: bold;
   font-size: 18px;
+  transition: 300ms;
 }
 .more-info-button:hover {
   background-color: rgba(240, 240, 240, 1);
+  padding: 0px 15px 0px 15px;
+
   border: 0px;
   cursor: pointer;
+  transition: 300ms;
 }
 
 .stadium-info {
