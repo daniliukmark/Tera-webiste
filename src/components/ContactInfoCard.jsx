@@ -41,9 +41,6 @@ export function ContactInfoCard({
     <>
       <div className={styles["wrap"]}>
         <div
-          className={`${styles["contact-card-blur"]} ${styles[`${size}`]}`}
-        ></div>
-        <div
           style={sizes[size].wrapSize}
           className={styles["contact-info-card-wrap"]}
         >

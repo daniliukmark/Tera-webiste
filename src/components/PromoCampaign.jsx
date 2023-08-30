@@ -1,6 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import styles from "src/styles/PromoCampaign.module.css";
 import { BASE_URL } from "src/assets/data";
+import arrowDown from "src/assets/Arrow-down.svg";
+
 const actionButton = new Map();
 export function PromoCampaign({ type, content }) {
   const navigate = useNavigate();
@@ -8,10 +10,10 @@ export function PromoCampaign({ type, content }) {
   actionButton.set(
     "mainPage",
     <button onClick={navigateToPromoPage} className={styles["promo-button"]}>
-      <i>Paremti FK Tera</i>
+      <i>Paremti FK Tera!</i>
     </button>
   );
-  actionButton.set("paramaPage", <h1>Kaip </h1>);
+
   return (
     <>
       <div id="promo" className={styles["promo-wrap"]}>

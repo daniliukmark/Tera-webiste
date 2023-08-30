@@ -2,11 +2,15 @@ import { ContactInfoCard } from "src/components/ContactInfoCard";
 import { CONTACTS } from "src/assets/data";
 import GoogleMapReact from "google-map-react";
 import styles from "src/styles/kontaktaiPage.module.css";
+import additionalStyles from "src/styles/ContactCard.module.css";
+
 import contactImg from "src/assets/contactsPic.webp";
 import phoneIcon from "src/assets/phone.svg";
 import emailIcon from "src/assets/email.svg";
 import pinIcon from "src/assets/location.svg";
 import tipIcon from "src/assets/tipIcon.svg";
+import { useRef } from "react";
+import { useParams } from "react-router-dom";
 
 const iconStyles = {
   width: "20px",
@@ -19,13 +23,23 @@ const ContactCardFields = [
     </h2>
   </>,
   <>
-    <img style={iconStyles} src={phoneIcon} alt="Phone icon" />
+    <img
+      className={additionalStyles["icon"]}
+      style={iconStyles}
+      src={phoneIcon}
+      alt="Phone icon"
+    />
     <h3>
       <b>{CONTACTS.phoneNumber}</b>
     </h3>
   </>,
   <>
-    <img style={iconStyles} src={emailIcon} alt="Email icon" />
+    <img
+      className={additionalStyles["icon"]}
+      style={iconStyles}
+      src={emailIcon}
+      alt="Email icon"
+    />
     <h3>
       <b>{CONTACTS.email} </b>
     </h3>

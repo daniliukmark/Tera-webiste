@@ -1,6 +1,6 @@
 import styles from "src/styles/footer.module.css";
 import { Link, useNavigate } from "react-router-dom";
-import { ROUTES, CALLS_FOR_ACTIONS, CONTACTS } from "src/assets/data";
+import { ROUTES, CONTACTS } from "src/assets/data";
 import facebookIcon from "src/assets/facebookIcon.svg";
 import youtubeIcon from "src/assets/youtubeIcon.svg";
 import phoneIcon from "src/assets/phone.svg";
@@ -9,7 +9,6 @@ import emailIcon from "src/assets/email.svg";
 import { useRef, useEffect } from "react";
 
 const intialRoutes = ROUTES;
-const callsForAction = CALLS_FOR_ACTIONS;
 const contactInfo = CONTACTS;
 const FACEBOOK_PAGE_URL =
   "https://www.facebook.com/profile.php?id=100060685733928";
