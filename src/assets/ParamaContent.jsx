@@ -48,17 +48,13 @@ export const paragraph4 = {
     <>
       Prezentacija bei tekstinė informacija{" "}
       <a href="https://www.vmi.lt/evmi/documents/20142/1178713/vmi-230301-paramos-vedlio-instrukcija.pdf/">
-        <i>
-          <b>ČIA</b>
-        </i>
+        <i>ČIA</i>
       </a>
       .
       <br />
       Video gali rasti{" "}
       <a href="https://www.youtube.com/embed/VVpaY-FFbKk?si=IONGKJraKkxIsETr">
-        <i>
-          <b>ČIA</b>
-        </i>
+        <i>ČIA</i>
       </a>
       .
       <br />
