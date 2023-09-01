@@ -47,10 +47,7 @@ export const paragraph4 = {
   content: (
     <>
       Prezentacija bei tekstinė informacija{" "}
-      <a
-        style={{ color: "black" }}
-        href="https://www.vmi.lt/evmi/documents/20142/1178713/vmi-230301-paramos-vedlio-instrukcija.pdf/"
-      >
+      <a href="https://www.vmi.lt/evmi/documents/20142/1178713/vmi-230301-paramos-vedlio-instrukcija.pdf/">
         <i>
           <b>ČIA</b>
         </i>
@@ -58,10 +55,7 @@ export const paragraph4 = {
       .
       <br />
       Video gali rasti{" "}
-      <a
-        style={{ color: "black" }}
-        href="https://www.youtube.com/embed/VVpaY-FFbKk?si=IONGKJraKkxIsETr"
-      >
+      <a href="https://www.youtube.com/embed/VVpaY-FFbKk?si=IONGKJraKkxIsETr">
         <i>
           <b>ČIA</b>
         </i>
