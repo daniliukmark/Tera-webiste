@@ -13,11 +13,7 @@ export const ROUTES = [
     text: "Pagrindinis",
     isSelected: false,
   },
-  {
-    path: `${BASE_URL}/klubas`,
-    text: "Apie Klubą",
-    isSelected: false,
-  },
+
   {
     path: `${BASE_URL}/parama`,
     text: "1.2% Parama",

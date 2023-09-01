@@ -8,7 +8,12 @@ function ArticleSection({
 }) {
   return (
     <>
-      <section className={styles["article-wrap"]}>
+      <section
+        style={{
+          borderTop: "solid 3px #fff",
+        }}
+        className={styles["article-wrap"]}
+      >
         <div
           style={{
             backgroundImage: `url(${imageUrl})`,
@@ -40,13 +45,7 @@ function ArticleSection({
           }}
           className={styles["article-content-wrap"]}
         >
-          <div
-            style={{
-              borderBottom: "solid 3px #f2f2f2",
-              borderTop: "solid 3px #f2f2f2",
-            }}
-            className={styles["article"]}
-          >
+          <div className={styles["article"]}>
             <h1 className={styles["article-header"]}>{articleHeader}</h1>
             <p className={styles["article-content"]}>{articleContent}</p>
           </div>

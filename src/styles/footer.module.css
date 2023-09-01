@@ -1,13 +1,12 @@
 .footer-wrap {
   z-index: 1;
   width: 100%;
-
+  min-height: 300px;
   box-sizing: border-box;
   background-color: black;
   display: flex;
   padding-top: 30px;
   justify-content: center;
-  align-items: center;
   transition: 300ms;
 }
 .footer-content {

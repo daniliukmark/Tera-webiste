@@ -1,0 +1,24 @@
+.content-wrap {
+  max-width: 1300px;
+  width: 100%;
+}
+@media all and (max-width: 1400px) {
+  .content-wrap {
+    max-width: 1100px;
+    transition: 300ms;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .content-wrap {
+    max-width: 900px;
+    transition: 300ms;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .content-wrap {
+    max-width: 800px;
+    transition: 300ms;
+  }
+}

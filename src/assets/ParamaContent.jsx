@@ -1,3 +1,5 @@
+import styles from "src/styles/ParamaPage.module.css";
+
 export const hook1 =
   "Ar zinai, kad tu gali prisideti prie “Teros” ateities ir rezultatu?";
 export const hook2 = "Ar zinai, kad gali gauti uz tai prizu?"; //( я думаю что если бы человек заполил бы эту просьбу и вы бы дарили бы им допустим простую футболку с лого теры, то желающих заполнить было бы больше.  если не будете делать так то можно просто убрать это поле и поле “Ka uz tai gausiu as”)
@@ -6,28 +8,83 @@ export const hook3 =
 
 export const paragraph1 = {
   header: "Kaip tai veikia?",
-  content:
-    "Kiekvienas dirbantys dirbantys Lietuvoje zmogus moka pajamas, taciau ne visi zino, kad dali savo pajamu (1,2%) nuskaiciuotu nuo savo algos tu gali paskirti mylimaj organizacijai: futbolo klubui, mokyklai ir t.t. Priesingai 1,2% tavo pajamu pasilieka valstybes biudzete.",
+  content: (
+    <>
+      Kiekvienas dirbantysis Lietuvoje žmogus moka pajamas, tačiau ne visi žino,
+      kad dalį GPM (1,2%) nuskaičiuoto nuo algos tu gali paskirti mylimai
+      organizacijai: futbolo klubui, mokyklai ir t.t. Priešingai, 1,2% tavo
+      pajamų nukeliauja į valstybės biudžetą.
+    </>
+  ),
 };
 export const paragraph2 = {
-  header: "Ką uz tai as gausiu?",
-  content:
-    "Kiekvienas dirbantys dirbantys Lietuvoje zmogus moka pajamas, taciau ne visi zino, kad dali savo pajamu (1,2%) nuskaiciuotu nuo savo algos tu gali paskirti mylimaj organizacijai: futbolo klubui, mokyklai ir t.t. Priesingai 1,2% tavo pajamu pasilieka valstybes biudzete.",
+  header: "Ką už tai gausiu?",
+  content: (
+    <>
+      Kiekvienas dirbantysis Lietuvoje žmogus moka pajamas, tačiau ne visi žino,
+      kad dalį GPM (1,2%) nuskaičiuoto nuo algos tu gali paskirti mylimai
+      organizacijai: futbolo klubui, mokyklai ir t.t. Priešingai, 1,2% tavo
+      pajamų nukeliauja į valstybės biudžetą.
+    </>
+  ),
 };
 
 export const paragraph3 = {
-  header: "Kaip man prisideti prie Komandos?",
-  content:
-    "Dziuagkis, VMI (Valstybinė mokesčių inspekcija) jau pasirupinuo situ klausimu. Tu gali naudotis situo video arba prezentacija kaip zingsis po zingsnio instrukcija, kad uzpildyti prasyma pervesti pajamų mokesčio dalį per VMI Elektroninio deklaravimo sistemą (EDS) https://deklaravimas.vmi.lt. Tai uztruks apie 6 minutes.",
-};
-export const paragraph4 = {
-  header: "Instrukcija ir ",
+  header: "Kaip man prisidėti prie Komandos?",
   content: (
     <>
-      Prezentacija bei tekstine informacija ČIA. <br /> Video gali rasti ČIA.{" "}
-      <br /> FK Tera juridinio asmens kodas: kodas <br /> Mokesčio dalies dydis
-      (procentais): 1,2 <br />
-      Mokesčio dalį skiriu iki mokestinio laikotarpio: 2026
+      Džiaukis, VMI (Valstybinė mokesčių inspekcija) jau pasirupino šiuo
+      klausimu. Tu gali užpildyti prašymą pervesti pajamų mokesčio dalį per VMI
+      Elektroninio deklaravimo sistemą{" "}
+      <a href="https://deklaravimas.vmi.lt">(EDS)</a> . O tam, kad tai padaryti
+      būtų lengviau, naudokis šiame video ar prezentacijoje pavaizduota kelių
+      žingsnių instrukcija. Tai uztruks tik 6 minutės.
+    </>
+  ),
+};
+export const paragraph4 = {
+  header: "Papildoma informacija ",
+  content: (
+    <>
+      Prezentacija bei tekstinė informacija{" "}
+      <a
+        style={{ color: "black" }}
+        href="https://www.vmi.lt/evmi/documents/20142/1178713/vmi-230301-paramos-vedlio-instrukcija.pdf/"
+      >
+        <i>
+          <b>ČIA</b>
+        </i>
+      </a>
+      .
+      <br />
+      Video gali rasti{" "}
+      <a
+        style={{ color: "black" }}
+        href="https://www.vmi.lt/evmi/documents/20142/1178713/vmi-230301-paramos-vedlio-instrukcija.pdf/"
+      >
+        <i>
+          <b>ČIA</b>
+        </i>
+      </a>
+      .
+      <br />
+      FK Tera juridinio asmens kodas:{" "}
+      <b>
+        <i>kodas</i>
+      </b>
+      <br />
+      Mokesčio dalies dydis{" "}
+      <b>
+        <i>(procentais)</i>: 1,2
+      </b>
+      <br />
+      Mokesčio dalį skiriu iki mokestinio laikotarpio:
+      <i>
+        <b> 2026</b>
+      </i>
+      <br />
+      <br />
+      <b>Ačiū, kad prisidėjai prie mylimos komandos sėkmės!</b>
     </>
   ),
 };

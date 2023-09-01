@@ -163,7 +163,7 @@
   }
 }
 
-@media all and (max-width: 350px) {
+@media all and (max-width: 380px) {
   .stadium-info {
     font-size: 14px;
     font-weight: bold;
@@ -174,5 +174,12 @@
   }
   .date-info {
     font-size: 16px;
+  }
+  .more-info-container {
+    height: 26px;
+  }
+  .more-info-button {
+    font-size: 12px;
+    padding: 0px 10px 0px 10px;
   }
 }

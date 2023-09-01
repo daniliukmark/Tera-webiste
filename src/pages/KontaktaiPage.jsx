@@ -9,8 +9,6 @@ import phoneIcon from "src/assets/phone.svg";
 import emailIcon from "src/assets/email.svg";
 import pinIcon from "src/assets/location.svg";
 import tipIcon from "src/assets/tipIcon.svg";
-import { useRef } from "react";
-import { useParams } from "react-router-dom";
 
 const iconStyles = {
   width: "20px",
@@ -59,23 +57,26 @@ export function KontaktaiPage() {
   );
   return (
     <>
-      <div className={styles["content-wrap"]}>
-        <div className={styles["contact-cards-wrap"]}>
-          <div className={styles["tip-wrap"]}>
-            <img className={styles["tip-icon"]} src={tipIcon} alt="tip icon" />
-            <span className={styles["tip-text"]}>
-              Jei turite klausimų ar problemų - skambinkite, mes mielai juos
-              išspręsime.
-            </span>
+      <div className={styles["page-wrap"]}>
+        <div className={styles["content-wrap"]}>
+          <div className={styles["contact-cards-wrap"]}>
+            <div className={styles["tip-wrap"]}>
+              <img
+                className={styles["tip-icon"]}
+                src={tipIcon}
+                alt="tip icon"
+              />
+              <span className={styles["tip-text"]}>
+                Jei turite klausimų ar problemų - skambinkite, mes mielai juos
+                išspręsime.
+              </span>
+            </div>
+            <ContactInfoCard
+              personImage={contactImg}
+              headerValue={"Direktorius"}
+              propertiesFields={ContactCardFields}
+            />
           </div>
-          <ContactInfoCard
-            personImage={contactImg}
-            headerValue={"Direktorius"}
-            propertiesFields={ContactCardFields}
-          />
-        </div>
-
-        <div className={styles["map-background"]}>
           <div className={styles["map-wrap"]}>
             <GoogleMapReact
               className={styles["map"]}
@@ -86,6 +87,7 @@ export function KontaktaiPage() {
             >
               <AnyReactComponent lat={54.709186} lng={25.32505} />
             </GoogleMapReact>
+            <div className={styles["map-background"]}></div>
           </div>
         </div>
       </div>

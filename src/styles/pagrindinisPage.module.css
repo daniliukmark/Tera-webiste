@@ -1,3 +1,12 @@
+.page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.page-wrap {
+  max-width: 1300px;
+  width: 100%;
+}
 .section-1 {
   display: flex;
   justify-content: space-between;
@@ -13,5 +22,23 @@
 @media all and (max-width: 1400px) {
   .section-1 {
     justify-content: center;
+  }
+}
+@media all and (max-width: 1400px) {
+  .page-wrap {
+    max-width: 1100px;
+    transition: 300ms;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .page-wrap {
+    max-width: 900px;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .page-wrap {
+    max-width: 800px;
   }
 }

@@ -5,13 +5,17 @@ import { PromoCampaign } from "src/components/PromoCampaign";
 export function PagrindinisPage() {
   return (
     <>
-      <section className={styles["section-1"]}>
-        <NextMatchday />
-        <LeagueTable />
-      </section>
-      <section className={styles["section-2"]}>
-        <PromoCampaign type={"mainPage"} />
-      </section>
+      <div className={styles["page"]}>
+        <div className={styles["page-wrap"]}>
+          <section className={styles["section-1"]}>
+            <NextMatchday />
+            <LeagueTable />
+          </section>
+          <section className={styles["section-2"]}>
+            <PromoCampaign type={"mainPage"} />
+          </section>
+        </div>
+      </div>
     </>
   );
 }
