@@ -99,7 +99,7 @@ function ArticleHeader() {
             ...(windowWidth > 1400 && { zIndex: "-6" }),
 
             position: "absolute",
-            backgroundColor: "var(--green)",
+            backgroundColor: "var(--red)",
             width: "100%",
             height: "100%",
           }}
