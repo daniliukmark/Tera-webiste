@@ -45,7 +45,8 @@ function ArticleHeader() {
           style={{
             zIndex: 0,
             width: "120%",
-            opacity: 0.05,
+            opacity: 0.07,
+            filter: "invert(100%)",
             background: `url("${bgWatermarkImage}")`,
             marginBottom: "10px", // Add margin between elements
             animation: `x-slide-motion ${animationLength}s infinite ease-in-out`,
@@ -99,7 +100,7 @@ function ArticleHeader() {
             ...(windowWidth > 1400 && { zIndex: "-6" }),
 
             position: "absolute",
-            backgroundColor: "var(--red)",
+            backgroundColor: "black",
             width: "100%",
             height: "100%",
           }}
