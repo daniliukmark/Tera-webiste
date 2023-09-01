@@ -60,7 +60,7 @@ export const paragraph4 = {
       Video gali rasti{" "}
       <a
         style={{ color: "black" }}
-        href="https://www.vmi.lt/evmi/documents/20142/1178713/vmi-230301-paramos-vedlio-instrukcija.pdf/"
+        href="https://www.youtube.com/embed/VVpaY-FFbKk?si=IONGKJraKkxIsETr"
       >
         <i>
           <b>ČIA</b>
