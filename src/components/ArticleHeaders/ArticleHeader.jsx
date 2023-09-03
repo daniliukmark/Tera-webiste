@@ -7,7 +7,7 @@ function ArticleHeader() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   let WatermarkBgList;
-  WatermarkBgList = Array.from({ length: 30 }, (_, index) => {
+  WatermarkBgList = Array.from({ length: 10 }, (_, index) => {
     let animationLength = Math.floor(Math.random() * (51 - 43 + 1) + 43);
     const heightsList = new Map();
     const widthsList = new Map();
@@ -87,7 +87,7 @@ function ArticleHeader() {
           overflow: "hidden",
           ...(windowWidth < 800 && { height: "350px" }),
           ...(windowWidth > 800 && windowWidth <= 1400 && { height: "500px" }),
-          ...(windowWidth > 1400 && { height: "800px" }),
+          ...(windowWidth > 1400 && { height: "700px" }),
           width: "100%",
           display: "flex",
           alignItems: "center",
@@ -128,7 +128,7 @@ function ArticleHeader() {
                 backgroundSize: "600px",
               }),
             ...(windowWidth > 1400 && {
-              backgroundSize: "1000px",
+              backgroundSize: "800px",
             }),
           }}
         />

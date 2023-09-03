@@ -52,6 +52,7 @@ export function NextMatchday({ isMainPage }) {
                   ) : (
                     <img
                       src={longArrowImg}
+                      draggable={false}
                       alt="grizti i pagrindini puslapi"
                       className={styles["long-arrow"]}
                     />
