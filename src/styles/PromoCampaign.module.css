@@ -124,6 +124,6 @@
 }
 @media all and (max-width: 350px) {
   .promo-img-background {
-    right: -80%;
+    display: none;
   }
 }

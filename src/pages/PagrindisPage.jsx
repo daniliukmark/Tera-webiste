@@ -8,7 +8,7 @@ export function PagrindinisPage() {
       <div className={styles["page"]}>
         <div className={styles["page-wrap"]}>
           <section className={styles["section-1"]}>
-            <NextMatchday />
+            <NextMatchday isMainPage={true} />
             <LeagueTable />
           </section>
           <section className={styles["section-2"]}>

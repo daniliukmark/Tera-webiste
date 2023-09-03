@@ -3,8 +3,8 @@ import teamHome from "src/assets/logo.png";
 import teamAway from "src/assets/teamPlaceholder.png";
 import { BASE_URL } from "src/assets/data";
 import { useNavigate } from "react-router-dom";
-
-export function NextMatchday() {
+import longArrowImg from "../assets/longArrow.svg";
+export function NextMatchday({ isMainPage }) {
   const footballMatch = {
     id: "1234567890",
     stadium: "Fanu Stadionas",
@@ -14,9 +14,10 @@ export function NextMatchday() {
   const navigate = useNavigate();
   const navigateToMatchDetails = () =>
     navigate(`${BASE_URL}/rungtynes/${footballMatch.id}`);
+  const navigateToPreviousPage = () => navigate(-1);
   return (
     <>
-      <div id="next-match" className={styles["matchday-wrap"]}>
+      <div style={{}} id="next-match" className={styles["matchday-wrap"]}>
         <div className={styles["matchday-info-wrap"]}>
           <div className={styles["matchday-content"]}>
             <div className={`${styles["team-container"]} ${styles["left"]}`}>
@@ -39,10 +40,22 @@ export function NextMatchday() {
               </div>
               <div className={styles["more-info-container"]}>
                 <button
-                  onClick={navigateToMatchDetails}
+                  onClick={
+                    isMainPage ? navigateToMatchDetails : navigateToPreviousPage
+                  }
                   className={styles["more-info-button"]}
                 >
-                  Apie Rungtynes
+                  {isMainPage ? (
+                    <h1 style={{ margin: "0px", fontFamily: "Cabin" }}>
+                      Apie Rungtynes
+                    </h1>
+                  ) : (
+                    <img
+                      src={longArrowImg}
+                      alt="grizti i pagrindini puslapi"
+                      className={styles["long-arrow"]}
+                    />
+                  )}
                 </button>
               </div>
             </div>

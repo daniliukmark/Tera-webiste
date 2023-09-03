@@ -10,7 +10,9 @@ export function PromoCampaign({ type, content }) {
   actionButton.set(
     "mainPage",
     <button onClick={navigateToPromoPage} className={styles["promo-button"]}>
-      <i>Paremti FK Tera!</i>
+      <span style={{ fontFamily: "Cabin" }}>
+        <i>Paremti FK Tera!</i>
+      </span>
     </button>
   );
 

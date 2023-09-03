@@ -55,7 +55,7 @@ function ArticleHeader() {
               backgroundSize: `auto ${heightsList.get("small")}px`,
             }),
             ...(windowWidth > 800 &&
-              windowWidth < 1400 && {
+              windowWidth <= 1400 && {
                 height: `${heightsList.get("medium")}px`,
                 backgroundSize: `auto ${heightsList.get("medium")}px`,
               }),
@@ -86,7 +86,7 @@ function ArticleHeader() {
           position: "relative",
           overflow: "hidden",
           ...(windowWidth < 800 && { height: "350px" }),
-          ...(windowWidth > 800 && windowWidth < 1400 && { height: "500px" }),
+          ...(windowWidth > 800 && windowWidth <= 1400 && { height: "500px" }),
           ...(windowWidth > 1400 && { height: "800px" }),
           width: "100%",
           display: "flex",
@@ -124,7 +124,7 @@ function ArticleHeader() {
               backgroundSize: "450px",
             }),
             ...(windowWidth > 800 &&
-              windowWidth < 1400 && {
+              windowWidth <= 1400 && {
                 backgroundSize: "600px",
               }),
             ...(windowWidth > 1400 && {
@@ -155,7 +155,7 @@ function ArticleHeader() {
 
             ...(windowWidth < 800 && { maxWidth: "500px" }),
             ...(windowWidth > 800 &&
-              windowWidth < 1400 && { maxWidth: "800px" }),
+              windowWidth <= 1400 && { maxWidth: "800px" }),
             ...(windowWidth > 1400 && { maxWidth: "1300px" }),
           }}
         >
@@ -174,7 +174,7 @@ function ArticleHeader() {
               ...(windowWidth < 800 &&
                 windowWidth > 400 && { maxWidth: "600px", fontSize: "40px" }),
               ...(windowWidth > 800 &&
-                windowWidth < 1400 && { maxWidth: "700px", fontSize: "60px" }),
+                windowWidth <= 1400 && { maxWidth: "700px", fontSize: "60px" }),
               ...(windowWidth > 1400 && {
                 maxWidth: "1000px",
                 fontSize: "80px",

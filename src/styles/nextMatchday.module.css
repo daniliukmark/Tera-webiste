@@ -126,6 +126,15 @@
     background-size: 800px;
   }
 }
+.long-arrow {
+  height: 40px;
+  width: 80px;
+  transition: 300ms;
+}
+.more-info-button:hover > .long-arrow {
+  width: 70px;
+  transition: 300ms;
+}
 
 @media all and (max-width: 500px) {
   .logo-container {
@@ -145,7 +154,15 @@
   .more-info-container {
     height: 30px;
   }
-
+  .long-arrow {
+    height: 30px;
+    width: 50px;
+    transition: 300ms;
+  }
+  .more-info-button:hover > .long-arrow {
+    width: 60px;
+    transition: 300ms;
+  }
   .more-info-button {
     font-size: 14px;
     padding: 0px 10px 0px 10px;
