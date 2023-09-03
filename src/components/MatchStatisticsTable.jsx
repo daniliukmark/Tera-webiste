@@ -16,15 +16,15 @@ function MatchStatisticsTable({
           justifyContent: "center",
           width: "100%",
           height: "70px",
-          background: "rgba(0,0,0,0.5)",
-          marginBottom: "10px",
+          marginBottom: "20px",
         }}
       >
         <div
           style={{
-            width: "100px",
+            width: "120px",
             height: "70px",
-            background: "rgba(0,0,0,0.5)",
+            background: "black",
+            color: "white",
           }}
         >
           <h1
@@ -41,6 +41,7 @@ function MatchStatisticsTable({
             {matchEvent.minute}'
           </h1>
         </div>
+        <div style={{ background: "rgba(0,0,0,0.5)" }}></div>
       </div>
     );
   });

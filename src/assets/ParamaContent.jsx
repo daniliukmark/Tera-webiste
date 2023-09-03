@@ -68,9 +68,9 @@ export const paragraph4 = {
         <i>(procentais)</i>: 1,2
       </b>
       <br />
-      Mokesčio dalį skiriu iki mokestinio laikotarpio:
+      Mokesčio dalį skiriu iki mokestinio laikotarpio:{" "}
       <i>
-        <b> 2026</b>
+        <b> 2026 </b>
       </i>
       <br />
       <br />
